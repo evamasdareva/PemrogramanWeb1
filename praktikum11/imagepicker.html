@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .container{
+               display: flex;
+               width: 500px;
+               height: 300px;
+               margin: 50px 350px;
+          }
+
+          .box{
+               display: flex;
+               justify-content: center;
+               width: 500px;
+               height: 300px;
+          }
+     </style>
+
+     <script>
+          function image_picker(){
+               let pilihan = document.getElementById("option");
+               const list_image = ["fizi.png", "ipin.png", "jarjit.png", "mail.png", "meimei.png", "upin.png", "zul.png"]
+               if(pilihan.value == "fizi"){
+                    let select = list_image[0];
+                    document.getElementById("image").src = `images/${select}`
+                    alert("Ini gambar Fizi")
+               }
+
+               if(pilihan.value == "ipin"){
+                    let select = list_image[1];
+                    document.getElementById("image").src = `images/${select}`
+                    alert("Ini gambar Ipin")
+               }
+
+               if(pilihan.value == "jarjit"){
+                    let select = list_image[2];
+                    document.getElementById("image").src = `images/${select}`
+                    alert("Ini gambar Jarjit")
+               }
+
+               if(pilihan.value == "mail"){
+                    let select = list_image[3];
+                    document.getElementById("image").src = `images/${select}`
+                    alert("Ini gambar Mail")
+               }
+
+               if(pilihan.value == "meimei"){
+                    let select = list_image[4];
+                    document.getElementById("image").src = `images/${select}`
+                    alert("Ini gambar Mei Mei")
+               }
+
+               if(pilihan.value == "upin"){
+                    let select = list_image[5];
+                    document.getElementById("image").src = `images/${select}`
+                    alert("Ini gambar Upin")
+               }
+
+               if(pilihan.value == "zul"){
+                    let select = list_image[6];
+                    document.getElementById("image").src = `images/${select}`
+                    alert("Ini gambar Zul")
+               }
+          }
+     </script>
+</head>
+<body>
+     <select name="" id="option" onchange="image_picker()">
+          <option value="">Pilih Gambar : </option>
+          <option value="fizi">Fizi</option>
+          <option value="ipin">Ipin</option>
+          <option value="jarjit">Jarjit</option>
+          <option value="mail">Mail</option>
+          <option value="meimei">Mei Mei</option>
+          <option value="upin">Upin</option>
+          <option value="zul">Zul</option>
+     </select>
+
+     <br>
+
+     <div class="container">
+          <div class="box">
+               <img id="image">
+          </div>
+     </div>
+</body>
+</html>

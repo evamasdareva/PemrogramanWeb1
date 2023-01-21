@@ -1,0 +1,74 @@
+body{
+    background-color: lightgoldenrodyellow;
+    
+}
+
+#header {
+    text-align: center;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: burlywood;
+}
+
+blockquote{
+    background-color: yellow;
+    border: 1px dotted black;
+    text-align: center;
+    font-weight: bold;
+}
+
+#profil{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gambar{
+    width: auto;
+    text-align: center;
+    
+}
+
+.ul{
+    text-align: center;
+}
+
+.koleksi {
+    display: flex;
+    width: 2000px;
+    height: 300px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.promo h2 {
+    color: red;
+    text-align: center;
+}
+
+.promo h3{
+    margin: auto;
+    width: 30%;
+    background-color: yellow;
+    border: 1px dotted black;
+    text-align: center;
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+}
+
+ol  {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}

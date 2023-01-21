@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | General UI</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+
+  <style>
+    .color-palette {
+      height: 35px;
+      line-height: 35px;
+      text-align: right;
+      padding-right: .75rem;
+    }
+
+    .color-palette.disabled {
+      text-align: center;
+      padding-right: 0;
+      display: block;
+    }
+
+    .color-palette-set {
+      margin-bottom: 15px;
+    }
+
+    .color-palette span {
+      display: none;
+      font-size: 12px;
+    }
+
+    .color-palette:hover span {
+      display: block;
+    }
+
+    .color-palette.disabled span {
+      display: block;
+      text-align: left;
+      padding-left: .75rem;
+    }
+
+    .color-palette-box h4 {
+      position: absolute;
+      left: 1.25rem;
+      margin-top: .75rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+      display: block;
+      z-index: 7;
+    }
+  </style>
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../index2.html" class="nav-link">Produk & Layanan</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../pages/layout/top-nav.html" class="nav-link">Booking</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../pages/layout/top-nav-sidebar.html" class="nav-link">Berita</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../pages/layout/boxed.html" class="nav-link">Tentang Kami</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../pages/examples/login.html" class="nav-link">Login</a>
+      </li>
+     
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+ 
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="brand"><br><br>
+                <h1 style="text-align: center;">
+                    RentalCars MEFA
+                </h1><br><br>
+            </div>
+
+            <!--NAVIGASI-->
+    
+            <br>
+        </div>
+    </div>
+
+<!--CONTENT-->
+<div class="content-berita">
+    <div class="row">
+        <div class="col-md-10"></div>
+        <div class="col-md-2">
+            <div>
+                <a href="../../index.html">Home</a> >
+                <a href="../../pages/layout/top-nav-sidebar.html">Berita</a> >
+                <a href="../../pages/UI/general.html">Berita 1</a>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+    <div class="thumb">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>                
+                    7 Hotel dengan Fasilitas Bathtub Terbaik di Bali
+
+                </h3>
+                <hr>
+                <p>
+                    Kalian sedang merencanakan liburan atau staycation ke Bali? 
+                    Kota satu ini memang tidak akan pernah bosan dikunjungi untuk berlibur dalam suasana apapun. 
+                    Mulai dari solo travelling, bersama teman-teman, keluarga besar hingga bersama pasangan. 
+                    Bali menjadi tujuan utama berlibur yang paling sering dikunjungi bagi para turis lokal maupun mancanegara. 
+                    Suasana nyaman dan hangat tepi pantai yang tersaji ditambah indahnya pemandangan, menjadikan Bali menjadi kota yang romantis. 
+                    Maka dari itu, tidak sedikit dari wisatawan yang menjadikan Bali sebagai tujuan utama dalam memilih tempat untuk berbulan madu. 
+                    Nah, bagi kalian yang sedang merencanakan bulan madu ke Bali. 
+                    Yuk, intip rekomendasi hotel dengan fasilitas bathtub di Bali.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+    <div class="row">
+    <div class="col-md-9">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Spazzio Bali Hotel</h4> 
+                <p>
+                    Rekomendasi hotel di Bali dekat tempat wisata pertama yang bisa kamu jadikan pilihan untuk menginap adalah Spazzio Bali Hotel. Hotel ini terletak di Jalan Dewi Sri No. 20, Kuta Bali yang memiliki lokasi strategis dengan berbagai lokasi wisata terbaik di Bali. Kamu bisa dengan mudah mengunjungi keindahan Pantai Kuta yang hanya berjarak 1,58 kilometer dari Spazzio Hotel. Pantai terdekat lainnya lainnya yang bisa kamu kunjungi adalah Pantai Seminyak dengan jarak 2,74 kilometer. Kamu juga tidak perlu jauh-jauh untuk bisa membeli oleh-oleh khas Bali, karena hotel ini dekat dengan Joger (2,7 km) dan Pusat Oleh-Oleh Krisna (800 m).
+                    <br><br>
+                    Spazzio Bali Hotel terdiri dari 61 kamar yang memiliki 2 tipe kamar, diantaranya tipe Superior dan Deluxe. Semua kamar yang tersedia dilengkapi dengan fasilitas penunjang, seperti TV kabel, Pendingin ruangan, mini bar, safety box, dan kamar mandi yang lengkap dengan peralatan mandi. Selain fasilitas kamar, para pengunjung akan dimudahkan dengan fasilitas penunjang lainnya seperti layanan kamar 24 jam, kolam renang, fasilitas kebugaran, restoran, dan berbagai fasilitas lainnya.
+                    <br><strong>Lokasi: Jalan Dewi Sri No.20, Kuta, Legian, Kuta, Bali, Indonesia, 80361</strong>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="../../images/hotel/spazzio.jpg" alt="Hotel Spazzio" width="600px">
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Atanaya by Century Park</h4> 
+                <p>
+                    Hotel yang berada di Sunset Road 88A ini menawarkan fasilitas mewah dengan harga yang ramah di kantong. Total kamar yang dimiliki oleh Atanaya by Century Park sebanyak 109 kamar yang lengkap dengan TV kabel, pendingin ruangan, WiFi, lemari pendingin, safety box, kamar mandi yang lengkap dengan perlengkapan mandi.
+                    <br><br>
+                    Pengunjung juga bisa menikmati berbagai fasilitas lainnya yang disediakan di hotel ini, diantaranya cafe, bar, fasilitas kecantikan, meja billiard, banquet hall, ruang konferensi, restoran, laundry, layanan medis, area parkir, dan berbagai fasilitas penunjang lainnya yang memudahkan pengunjung hotel. Namun spot terbaik yang menjadi favorit bagi para pengunjung adalah area kolam renang yang berada di rooftop. Di sini, kamu bisa menikmati pemandangan alam Bali dari atas rooftop sambil ditemani makanan dan minuman dan duduk-duduk bersantai di pinggir kolam renang.
+                    <br><br>
+                    Selain fasilitas yang membuat para pengunjungnya nyaman, kamu juga dengan mudah mengakses berbagai lokasi menarik di sekitar area hotel. Lokasi Atanaya by Century Park terletak hanya 25 menit dari Bandara Internasional Ngurah Rai. Kamu juga bisa mengunjungi destinasi wisata dengan panorama yang menawan di Pantai Double Six (2 km) dan Pantai Kuta (4 km). Tak hanya dekat dengan wisata alam, kamu juga bisa menjajal wahana menarik di Trans Studio Mall Bali yang bisa ditempuh dengan jarak 500 meter.                    
+                    <br><strong>Lokasi: Sunset Road 88 A (Next to Krisna Oleh Oleh) , Kuta, Badung, Bali, Indonesia, 80361</strong>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="../../images/hotel/atanaya.jpg" alt="Hotel Atanaya" width="600px">
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Grand Zuri Kuta Bali</h4> 
+                <p>
+                    Grand Zuri Kuta Bali merupakan salah satu penginapan yang berada di lokasi Kuta yang populer bagi wisatawan. Hotel berbintang 4 yang dekat dengan tempat wisata di Bali ini di desain dengan arsitektur kontemporer. Setiap kamar hotel ini dilengkapi dengan TV kabel, pendingin ruangan, lemari pendingin. Beragam fasilitas publik juga disediakan demi menunjang kemudahan pengunjung, seperti kafe, area parkir, restoran, ruang rapat, kolam renang, WiFi, layanan kamar 24 jam, dan lainnya.
+                    <br><br>
+                    Jika menginap di Grand Zuri Kuta Bali, kamu hanya membutuhkan waktu 10 menit untuk berkendara ke Pantai Kuta. Tak jauh dari hotel, kamu juga bisa membeli makanan khas Bali di Jl. Dewi Sri. Hotel ini juga dikelilingi berbagai pusat perbelanjaan seperti Mal Bali Galeria dan Discovery Shopping Mall.                    
+                <br><strong>Lokasi: Jl. Raya Kuta No 81, Kuta, Badung, Bali, Indonesia, 80361</strong>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="../../images/hotel/gzuri.jpg" alt="Hotel Grand Zuri" width="600px">
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Siesta Legian Hotel</h4> 
+                <p>
+                    Siesta Legian Hotel adalah salah satu penginapan di Bali yang dekat dengan tempat wisata. Selain keramah-tamahan para pegawai, Siesta Legian Hotel juga menjanjikan berbagai kenyamanan kepada para pengunjungnya dengan fasilitas publik yang disediakan, diantaranya pusat kebugaran, kolam renang, bar, ruang konferensi, restoran, area bermain untuk anak-anak, dan beragam fasilitas publik lainnya. 
+                    <br><br>
+                    Keuntungan yang akan didapatkan jika bermalam di Siesta Legian Hotel adalah karena lokasinya yang strategis. Hotel ini berdekatan dengan berbagai wisata menari seperti Pantai Legian (0,84 km), Dream Museum Zone (0,97 km), Pantai Kuta (1,30 km), Pantai Seminyak (2,23 km), serta dikelilingi oleh berbagai restoran, pusat perbelanjaan, dan pusat oleh-oleh khas Bali.                    
+                <br><strong>Lokasi: Jl. Bunut Sari No.8, Legian - Kuta, Legian, Kuta, Bali, Indonesia, 80361</strong>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="../../images/hotel/siesta.jpg" alt="Hotel Siesta" width="600px">
+            </div>
+        </div>
+        
+        <hr>
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Sandat Hotel Legian</h4> 
+                <p>
+                    Memiliki total 35 kamar yang tersedia dengan arsitektur ruangan bernuansa Bali, Sandat Hotel Legian dilengkapi dengan berbagai fasilitas kamar yang nyaman dan memadai untuk para pengunjung. Fasilitas publik yang mampu menunjang para pengunjung yang menginap pun juga tak kalah lengkap, diantaranya kolam renang, penyewaan sepeda, restoran, area parkir, layanan kebersihan, jasa tur, area taman terbuka, fasilitas kebugaran, dan masih banyak lagi fasilitas lainnya yang dapat dinikmati pengunjung.
+                    <br><br>
+                    Hotel ini dekat dengan tempat wisata belanja di Bali, karena hotel ini berdekatan dengan aneka butik. Kamu juga bisa menemukan pusat perbelanjaan lainnya seperti Mayang Bali Art Market (0,34 km). Kamu juga bisa dengan mudah menikmati keindahan alam Pantai Kuta yang hanya berjarak 0,81 kilometer dan Kuta Theater yang dapat ditempuh dengan jarak 1,06 kilometer.                    
+                <br><strong>Lokasi: Jl. Raya Legian No.120, Kuta, Kabupaten Badung, Bali., Legian, Kuta, Bali, Indonesia, 80361</strong>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="../../images/hotel/sandat.jpg" alt="Hotel Sandat Legian" width="600px">
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Next Tuban Bali Hotel</h4> 
+                <p>
+                    Next Tuban Bali Hotel merupakan hotel berbintang 3 yang beralamat di Jalan Puri Gerenceng (Ayu Nadi) no 9x, Tuban, Kuta, Bali dengan berbagai layanan dan fasilitas penunjang pengunjung. Hotel yang dekat dengan tempat wisata di Bali ini menjamin kenyamanan para pengunjung yang menginap yang akan merasakan bermalam senyaman berada di rumah sendiri. Seluruh kamar yang berjumlah 50 kamar yang menyediakan fasilitas kamar berupa pendingin ruangan, TV kabel, WiFi, minibar, brankas, serta kamar mandi yang lengkap dengan perlengkapan mandi. Kamu juga bisa melakukan berbagai aktivitas dan olahraga seperti spa, kolam renang, dan fasilitas kebugaran. Kamu juga bisa menikmati makanan yang lezat khas Bali di restoran di hotel ini.
+                    <br><br>
+                    Lokasi hotel berdekatan dengan berbagai destinasi seperti Pantai Kuta (2,41 km) dan Pantai Seminyak (5,40 km). Kamu juga bisa berbelanja di Beachwalk yang hanya berjarak 2,60 kilometer. Selain itu, hotel ini juga berdekatan dengan Bandar Udara Internasional Ngurah rai yang berjarak 976 meter.                    
+                <br><strong>Lokasi: Jalan Puri Gerenceng (Ayu Nadi) no 9x, Tuban, Kuta, Bali, Indonesia, 80361</strong>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="../../images/hotel/tuban.jpg" alt="Hotel Next Tuban" width="600px">
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-8">
+                <h4>The Alea Seminyak</h4> 
+                <p>
+                    Jika kamu berlibur ke Bali bersama keluarga, The Alea Seminyak cocok untuk dijadikan sebagai tempat menginap terbaik bersama keluarga. Seluruh kamar di hotel ini menyuguhkan pemandangan langsung ke kolam renang dengan fasilitas kamar berupa TV kabel, pendingin ruangan, mini bar, serta perlengkapan mandi yang lengkap. Kamu juga bisa menikmati fasilitas dan layanan yang disuguhkan oleh The Alea Seminyak seperti spa, kolam renang, kafe, ruang konferensi, dan lainnya.
+                    <br><br>
+                    Selain itu, lokasinya yang berada Jl. Cendrawasih No.78 sangat strategis berdekatan dengan tempat wisata di Bali, seperti Pantai Kuta yang hanya berjarak 1,11 kilometer dan Pantai Seminyak yang hanya berjarak 2,25 kilometer. Tak jauh juga dari hotel, terdapat Museum Kain yang hanya berjarak 851 meter, dan berbagai area tempat makan dan restoran yang bisa kamu coba.
+                    <br><strong>Lokasi: Jl. Cendrawasih No. 78, Petitenget, Seminyak, Kuta, Bali, Indonesia, 80361</strong>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="../../images/hotel/alea.jpg" alt="Hotel Alea" width="600px">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <h5>
+             Berita lainnya..
+        </h5>
+        <div class="list-group">
+            <div class="list-group-item">
+                <a href="../../pages/UI/general.html">7 Hotel dengan Fasilitas Bathtub Terbaik di Bali
+                </a>
+            </div>
+            <div class="list-group-item">
+                <a href="../../pages/UI/icons.html">Rekomendasi Aktivitas Seru untuk Dilakukan Bersama Anak di Rumah
+                </a>
+            </div>
+            <div class="list-group-item">
+                <a href="../../pages/UI/buttons.html">Jurus Anti Pusing Saat Naik Kereta Api, Duduk Mundur Tak Lagi Masalah!</a>
+            </div>
+            <div class="list-group-item">
+                <a href="../../pages/UI/sliders.html">Kamu yang Tak Sabar Ingin Olahraga di Luar Ruangan, Baca Dulu Tips Amannya!
+                </a>
+            </div>
+            <div class="list-group-item">
+                <a href="../../pages/UI/modals.html">Tips Liburan Musim Hujan, Tak Cukup Hanya Sedia Payung!
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.1.0
+    </div>
+    <strong>Copyright &copy; 2023-Unknown <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+</body>
+</html>
